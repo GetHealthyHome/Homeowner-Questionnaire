@@ -5,23 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comprehensive Heat Pump Evaluation Questionnaire</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; background-color: #f8fdf8; }
-    h1 { text-align: center; }
-    form { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    label { font-weight: bold; display: block; margin-top: 15px; }
-    input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; border-radius: 5px; border: 1px solid #ccc; }
-    .checkbox-group { display: flex; flex-wrap: wrap; }
-    .checkbox-group label { font-weight: normal; width: 48%; margin: 5px 1%; }
-    .submit-button { margin-top: 20px; text-align: center; }
-    button { padding: 10px 20px; font-size: 16px; cursor: pointer; background-color: white; border: 2px solid #4CAF50; border-radius: 8px; }
-    button:hover { background-color: #d9f2d9; }
-    .logo { text-align: center; margin-bottom: 20px; }
-    .powered-by { text-align: center; margin-top: 30px; font-size: 0.9em; color: #4CAF50; }
-    @media (max-width: 600px) {
-      form { padding: 10px; }
-      .checkbox-group label { width: 100%; }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8fdf8;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  form {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  label {
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 48%;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  .submit-button {
+    margin-top: 30px;
+    text-align: center;
+  }
+  button {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;
+  color: #54b948;
+  border: 2px solid #54b948;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+button:hover {
+  background-color: #c9f3c2;
+  color: black;
+}
+.powered-by {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #54b948;
+}
+
+  @media (max-width: 600px) {
+    form {
+      padding: 15px;
     }
-  </style>
+    .checkbox-group label {
+      width: 100%;
+    }
+  }
+</style>
+
 </head>
 <body>
 
@@ -224,11 +291,7 @@
 <div class="submit-button">
   <button type="submit">Submit</button>
 </div>
- 
 
-    <div class="submit-button">
-      <button type="submit">Submit</button>
-    </div>
   </form>
 
   <div class="powered-by">
