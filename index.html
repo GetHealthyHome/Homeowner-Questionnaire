@@ -44,15 +44,19 @@ input, select, textarea {
     resize: vertical;
     min-height: 80px;
   }
-  .checkbox-group {
-  display: block;
-  margin-top: 10px;
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
+
 .checkbox-group label {
-  display: block;
-  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin: 6px 0;
+  font-weight: normal;
   font-size: 14px;
 }
 
