@@ -52,6 +52,11 @@ input, select, textarea {
   margin-left: 0;
   gap: 6px; /* Tighter vertical space between rows */
 }
+.checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  transform: translateY(2px); /* <- This tiny move perfectly centers it */
+}
 
 .checkbox-group label {
   display: flex;
