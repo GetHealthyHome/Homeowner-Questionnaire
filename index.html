@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprehensive Heat Pump Evaluation Questionnaire</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background-color: #f8fdf8; }
+    h1 { text-align: center; }
+    form { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    label { font-weight: bold; display: block; margin-top: 15px; }
+    input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; border-radius: 5px; border: 1px solid #ccc; }
+    .checkbox-group { display: flex; flex-wrap: wrap; }
+    .checkbox-group label { font-weight: normal; width: 48%; margin: 5px 1%; }
+    .submit-button { margin-top: 20px; text-align: center; }
+    button { padding: 10px 20px; font-size: 16px; cursor: pointer; background-color: white; border: 2px solid #4CAF50; border-radius: 8px; }
+    button:hover { background-color: #d9f2d9; }
+    .logo { text-align: center; margin-bottom: 20px; }
+    .powered-by { text-align: center; margin-top: 30px; font-size: 0.9em; color: #4CAF50; }
+    @media (max-width: 600px) {
+      form { padding: 10px; }
+      .checkbox-group label { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">
+    <img src="logo.png" alt="Get Healthy Home Logo" width="120">
+  </div>
+
+  <h1>Homeowner Questionnaire</h1>
+
+  <form id="heatPumpForm">
+
+    <!-- Form content (your fields) will stay here - skipped for brevity -->
+    <!-- Paste all your detailed form fields from previous code here. -->
+    <label>Name:</label>
+<input type="text" name="Name" required>
+
+<label>Address:</label>
+<input type="text" name="Address" required>
+
+<label>Email address:</label>
+<input type="email" name="Email" required>
+
+<label>Primary Phone Number:</label>
+<input type="tel" name="PrimaryPhone" required>
+
+<label>Secondary Phone Number:</label>
+<input type="tel" name="SecondaryPhone">
+
+<label>Top 3 Potential Improvement Benefits:</label>
+<div class="checkbox-group">
+  <label><input type="checkbox" name="Benefits" value="Improved Indoor Air Quality"> Improved Indoor Air Quality</label>
+  <label><input type="checkbox" name="Benefits" value="Occupant Comfort"> Occupant Comfort</label>
+  <label><input type="checkbox" name="Benefits" value="Reduced Energy Bills"> Reduced Energy Bills</label>
+  <label><input type="checkbox" name="Benefits" value="Reduced Carbon Footprint"> Reduced Carbon Footprint</label>
+  <label><input type="checkbox" name="Benefits" value="Increased Home Value"> Increased Home Value</label>
+  <label><input type="checkbox" name="Benefits" value="Need to Replace HVAC"> Need to replace Existing HVAC System</label>
+</div>
+
+<label>Why are you looking to upgrade your heating and/or cooling equipment?</label>
+<textarea name="UpgradeReason"></textarea>
+
+<label>How long have you lived here?</label>
+<input type="text" name="LivedHere">
+
+<label>How many people live here?</label>
+<input type="number" name="PeopleLiving">
+
+<label>How many pets live here?</label>
+<input type="number" name="PetsLiving">
+
+<label>When was your home built?</label>
+<input type="text" name="HomeBuiltYear">
+
+<label>Estimated square footage of the finished spaces:</label>
+<input type="text" name="SquareFootage">
+
+    <label>Electric Utility Supplier:</label>
+<div class="checkbox-group">
+  <label><input type="checkbox" name="ElectricSupplier" value="ConEd"> ConEd</label>
+  <label><input type="checkbox" name="ElectricSupplier" value="NYSEG"> NYSEG</label>
+  <label><input type="checkbox" name="ElectricSupplier" value="Central Hudson"> Central Hudson</label>
+  <label><input type="checkbox" name="ElectricSupplier" value="Other"> Other</label>
+</div>
+
+<label>How are you getting Domestic Hot Water?</label>
+<div class="checkbox-group">
+  <label><input type="checkbox" name="HotWaterType" value="Indirect storage"> Indirect storage</label>
+  <label><input type="checkbox" name="HotWaterType" value="Electric"> Electric</label>
+  <label><input type="checkbox" name="HotWaterType" value="Tankless"> Tankless</label>
+  <label><input type="checkbox" name="HotWaterType" value="Heat Pump"> Heat Pump</label>
+  <label><input type="checkbox" name="HotWaterType" value="Solar"> Solar</label>
+  <label><input type="checkbox" name="HotWaterType" value="Other"> Other</label>
+</div>
+
+<label>Type of energy used to heat home:</label>
+<div class="checkbox-group">
+  <label><input type="checkbox" name="HeatingEnergy" value="Oil"> Oil</label>
+  <label><input type="checkbox" name="HeatingEnergy" value="Natural Gas"> Natural Gas</label>
+  <label><input type="checkbox" name="HeatingEnergy" value="Electricity"> Electricity</label>
+  <label><input type="checkbox" name="HeatingEnergy" value="Propane"> Propane</label>
+</div>
+
+<label>Name of Energy Provider:</label>
+<input type="text" name="EnergyProvider">
+
+<label>Type of heating system:</label>
+<div class="checkbox-group">
+  <label><input type="checkbox" name="HeatingSystem" value="Radiant/Radiators/Baseboard"> Radiant/Radiators/Baseboard</label>
+  <label><input type="checkbox" name="HeatingSystem" value="Forced Air"> Forced Air</label>
+  <label><input type="checkbox" name="HeatingSystem" value="HydroAir"> HydroAir</label>
+</div>
+
+<label>If forced air/HydroAir, does it provide both heating and cooling?</label>
+<select name="HeatingCoolingBoth">
+  <option value=\"\">Select...</option>
+  <option value=\"Yes\">Yes</option>
+  <option value=\"No\">No</option>
+</select>
+
+<label>If forced air/HydroAir, how often do you change your filters?</label>
+<input type="text" name="FilterChangeFrequency">
+
+<label>Type of cooling system:</label>
+<div class="checkbox-group">
+  <label><input type="checkbox" name="CoolingSystem" value="Central A/C"> Central A/C</label>
+  <label><input type="checkbox" name="CoolingSystem" value="Window"> Window</label>
+  <label><input type="checkbox" name="CoolingSystem" value="Ductless Minisplit"> Ductless Minisplit</label>
+  <label><input type="checkbox" name="CoolingSystem" value="None"> None</label>
+</div>
+
+<label>How often do you change your cooling system filters?</label>
+<input type="text" name="CoolingFilterChange">
+
+<label>Thermostat set points:</label>
+<input type="text" name="ThermostatCooling" placeholder="Cooling Set Point">
+<input type="text" name="ThermostatHeating" placeholder="Heating Set Point">
+
+ <label>Have you taken steps to improve your home’s indoor air quality, comfort or efficiency?</label>
+<select name="StepsToImprove">
+  <option value="">Select...</option>
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
+</select>
+
+<label>If so, what have you done?</label>
+<textarea name="ImprovementsDone"></textarea>
+
+<label>Have you improved your home's insulation?</label>
+<select name="InsulationImproved">
+  <option value="">Select...</option>
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
+</select>
+
+<label>If so, what have you done?</label>
+<textarea name="InsulationDetails"></textarea>
+
+<label>Does anyone in your home suffer from:</label>
+<div class="checkbox-group">
+  <label><input type="checkbox" name="HealthIssues" value="Allergies"> Allergies</label>
+  <label><input type="checkbox" name="HealthIssues" value="Asthma"> Asthma</label>
+  <label><input type="checkbox" name="HealthIssues" value="Respiratory Issues"> Respiratory Issues</label>
+</div>
+
+<label>Comfort issues:</label>
+<div class="checkbox-group">
+  <label><input type="checkbox" name="ComfortIssues" value="Humid in the summer"> Humid in the summer</label>
+  <label><input type="checkbox" name="ComfortIssues" value="Dry in the winter"> Dry in the winter</label>
+</div>
+
+<label>Does your home ever feel stuffy?</label>
+<select name="HomeStuffy">
+  <option value="">Select...</option>
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
+</select>
+
+<label>Are there drafty areas in your home?</label>
+<select name="DraftyAreas">
+  <option value="">Select...</option>
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
+</select>
+
+<label>If so, where and when?</label>
+<textarea name="DraftLocations"></textarea>
+
+<label>Does your home have rooms or areas that are too warm or too cold?</label>
+<div class="checkbox-group">
+  <label><input type="checkbox" name="TemperatureIssues" value="Too Cold"> Too Cold</label>
+  <label><input type="checkbox" name="TemperatureIssues" value="Too Warm"> Too Warm</label>
+</div>
+
+<label>If so, where and when?</label>
+<textarea name="TemperatureLocations"></textarea>
+
+<label>Is there a moisture or condensation problem in the home?</label>
+<select name="MoistureProblem">
+  <option value="">Select...</option>
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
+</select>
+
+<label>If so, in what areas?</label>
+<textarea name="MoistureAreas"></textarea>
+
+<label>Have you noticed any mold or musty smells?</label>
+<select name="MoldSmells">
+  <option value="">Select...</option>
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
+</select>
+
+<label>If so, when and where?</label>
+<textarea name="MoldLocations"></textarea>
+
+   <label>Is there any other information you feel we should know about?</label>
+<textarea name="OtherInformation"></textarea>
+
+<div class="submit-button">
+  <button type="submit">Submit</button>
+</div>
+ 
+
+    <div class="submit-button">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+
+  <div class="powered-by">
+    Powered by Get Healthy Home
+  </div>
+
+  <script>
+    const form = document.getElementById('heatPumpForm');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      alert('Thank you for completing your Home Performance Evaluation! Our team will review your information and be in touch shortly.');
+
+      const formData = new FormData(form);
+      const data = {};
+      formData.forEach((value, key) => {
+        if (data[key]) {
+          data[key] += `, ${value}`;
+        } else {
+          data[key] = value;
+        }
+      });
+
+      fetch(https://script.google.com/macros/s/AKfycbwcg9Cgr-ZjksZRJAVbwK1u6GcFtby8csCzmr74QUHiGUAUevmn8culDfzhIn6ZNAoFAg/exec, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
