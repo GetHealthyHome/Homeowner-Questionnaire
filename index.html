@@ -47,7 +47,7 @@ input, select, textarea {
 .checkbox-group {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* <- THIS is the key */
+  align-items: flex-start;
   padding-left: 0;
   margin-left: 0;
 }
@@ -60,6 +60,9 @@ input, select, textarea {
   font-size: 14px;
   padding-left: 0;
   margin-left: 0;
+  white-space: nowrap; /* <<< THIS LINE is the secret */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
   .submit-button {
     margin-top: 30px;
