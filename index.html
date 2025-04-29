@@ -45,7 +45,9 @@ input, select, textarea {
     min-height: 80px;
   }
 .checkbox-group {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* <- THIS is the key */
   padding-left: 0;
   margin-left: 0;
 }
