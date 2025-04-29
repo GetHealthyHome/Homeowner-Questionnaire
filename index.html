@@ -45,18 +45,19 @@ input, select, textarea {
     min-height: 80px;
   }
   .checkbox-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .checkbox-group label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    width: 48%;
-    font-weight: normal;
-    font-size: 14px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
   .submit-button {
     margin-top: 30px;
     text-align: center;
@@ -94,10 +95,6 @@ button:hover {
 
 </head>
 <body>
-
-  <div class="logo">
-    <img src="logo.png" alt="Get Healthy Home Logo" width="120">
-  </div>
 
   <h1>Homeowner Questionnaire</h1>
 
@@ -298,7 +295,7 @@ button:hover {
   </form>
 
   <div class="powered-by">
-    Powered by Get Healthy Home
+    Powered by Healthy Home Energy & Consulting
   </div>
 
   <script>
