@@ -17,52 +17,52 @@ input, select, textarea {
     text-align: center;
     margin-bottom: 22px;
   }
-  form {
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  }
-  label {
-    font-weight: bold;
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 5px;
-  }
-  input, select, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    box-sizing: border-box;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-  }
-  textarea {
-    resize: vertical;
-    min-height: 80px;
-  }
+form {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px; /* was 25px — slightly tighter form body */
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px; /* was 20px */
+  margin-bottom: 3px; /* was 5px */
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 2px;
+  margin-bottom: 8px; /* was 10-15px — now tighter */
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
 .checkbox-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-left: 0;
   margin-left: 0;
-  gap: 6px; /* Tighter vertical space between rows */
-}
-.checkbox-group input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  transform: translateY(2px); /* <- This tiny move perfectly centers it */
+  gap: 4px; /* was 6px — even tighter */
 }
 
 .checkbox-group label {
   display: flex;
   align-items: center;
-  gap: 8px; /* Tighter gap between checkbox and text */
-  margin: 4px 0;
+  gap: 8px;
+  margin: 2px 0; /* was 4px — less vertical space */
   font-weight: normal;
   font-size: 15px;
   line-height: 1.2;
@@ -71,17 +71,19 @@ input, select, textarea {
   text-overflow: ellipsis;
 }
 
-/* Make input (checkbox) bigger for better alignment */
 .checkbox-group input[type="checkbox"] {
   width: 18px;
   height: 18px;
+  transform: translateY(2px);
 }
-  .submit-button {
-    margin-top: 30px;
-    text-align: center;
-  }
-  button {
-  padding: 12px 24px;
+
+.submit-button {
+  margin-top: 20px; /* slightly tighter between last field and submit */
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   background-color: white;
@@ -90,10 +92,12 @@ input, select, textarea {
   border-radius: 8px;
   transition: 0.3s ease;
 }
+
 button:hover {
   background-color: #c9f3c2;
   color: black;
 }
+
 .powered-by {
   text-align: center;
   margin-top: 30px;
